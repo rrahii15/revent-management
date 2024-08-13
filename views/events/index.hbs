@@ -1,0 +1,22 @@
+<h2>My Events</h2>
+<a href="/events/new" class="btn btn-primary" style="background-color: #007bff; color: #fff; padding: .75rem 1.5rem; border-radius: 3px; text-decoration: none;">Add New Event</a>
+<ul style="list-style: none; padding: 0; margin: 1rem 0;">
+  {{#each events}}
+    <li style="border: 1px solid #ddd; margin-bottom: 1rem; padding: 1rem; border-radius: 5px; background: #fff;">
+      <h3 style="margin: 0 0 .5rem;">{{this.title}}</h3>
+      <p style="margin: .5rem 0;">{{this.description}}</p>
+      <p style="margin: .5rem 0;">Date: {{this.date}}</p>
+      {{#if this.image}}
+        <img src="{{this.image}}" alt="{{this.title}}" style="display: block; margin-top: .5rem; max-width: 100%; border-radius: 3px;" />
+      {{/if}}
+      <a href="/events/{{this._id}}/edit" class="btn btn-secondary" style="background-color: #6c757d; color: #fff; padding: .5rem 1rem; border-radius: 3px; text-decoration: none;">Edit</a>
+      <form
+        action="/events/{{this._id}}?_method=DELETE"
+        method="POST"
+        style="display:inline; margin-left: .5rem;"
+      >
+        <button type="submit" class="btn btn-danger" style="background-color: #dc3545; color: #fff; border: none; padding: .5rem 1rem; border-radius: 3px; cursor: pointer;">Delete</button>
+      </form>
+    </li>
+  {{/each}}
+</ul>

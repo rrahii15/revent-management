@@ -1,0 +1,26 @@
+<h2>Add New Event</h2>
+<form action="/events" method="POST" enctype="multipart/form-data" style="max-width: 600px; margin: auto; padding: 1rem; background: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+  <div class="form-group" style="margin-bottom: 1rem;">
+    <label for="title" style="display: block; margin-bottom: .5rem;">Title:</label>
+    <input type="text" name="title" id="title" class="form-control" style="width: 100%; padding: .5rem; border: 1px solid #ddd; border-radius: 3px;" required />
+  </div>
+  <div class="form-group" style="margin-bottom: 1rem;">
+    <label for="description" style="display: block; margin-bottom: .5rem;">Description:</label>
+    <textarea
+      name="description"
+      id="description"
+      class="form-control"
+      style="width: 100%; padding: .5rem; border: 1px solid #ddd; border-radius: 3px;"
+      required
+    ></textarea>
+  </div>
+  <div class="form-group" style="margin-bottom: 1rem;">
+    <label for="date" style="display: block; margin-bottom: .5rem;">Date:</label>
+    <input type="date" name="date" id="date" class="form-control" style="width: 100%; padding: .5rem; border: 1px solid #ddd; border-radius: 3px;" required />
+  </div>
+  <div class="form-group" style="margin-bottom: 1rem;">
+    <label for="image" style="display: block; margin-bottom: .5rem;">Image:</label>
+    <input type="file" name="image" id="image" class="form-control" style="border: 1px solid #ddd; border-radius: 3px;" />
+  </div>
+  <button type="submit" class="btn btn-primary" style="background-color: #007bff; color: #fff; border: none; padding: .75rem 1.5rem; border-radius: 3px; cursor: pointer;">Add Event</button>
+</form>

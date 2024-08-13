@@ -1,0 +1,50 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Custom Google Font */
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #007bff;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: #007bff;
+}

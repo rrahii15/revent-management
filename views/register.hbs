@@ -1,0 +1,22 @@
+<div class="form-container" style="max-width: 400px; margin: auto; padding: 1rem; background: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+  <h2>Register</h2>
+  <form action="/users/register" method="POST">
+    <div class="form-group" style="margin-bottom: 1rem;">
+      <label for="username" style="display: block; margin-bottom: .5rem;">Username</label>
+      <input type="text" name="username" required style="width: 100%; padding: .5rem; border: 1px solid #ddd; border-radius: 3px;" />
+    </div>
+    <div class="form-group" style="margin-bottom: 1rem;">
+      <label for="email" style="display: block; margin-bottom: .5rem;">Email</label>
+      <input type="email" name="email" required style="width: 100%; padding: .5rem; border: 1px solid #ddd; border-radius: 3px;" />
+    </div>
+    <div class="form-group" style="margin-bottom: 1rem;">
+      <label for="password" style="display: block; margin-bottom: .5rem;">Password</label>
+      <input type="password" name="password" required style="width: 100%; padding: .5rem; border: 1px solid #ddd; border-radius: 3px;" />
+    </div>
+    <div class="form-group" style="margin-bottom: 1rem;">
+      <label for="password2" style="display: block; margin-bottom: .5rem;">Confirm Password</label>
+      <input type="password" name="password2" required style="width: 100%; padding: .5rem; border: 1px solid #ddd; border-radius: 3px;" />
+    </div>
+    <button type="submit" style="background-color: #007bff; color: #fff; border: none; padding: .75rem 1.5rem; border-radius: 3px; cursor: pointer;">Register</button>
+  </form>
+</div>

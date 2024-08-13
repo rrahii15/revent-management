@@ -1,0 +1,24 @@
+<section class="banner" style="text-align: center; padding: 2rem; background: #007bff; color: #fff; margin-bottom: 2rem;">
+  <h1>Welcome to Event-M</h1>
+  <p>Your one-stop solution for managing events</p>
+</section>
+
+<section class="latest-events" style="padding: 2rem;">
+  <h2>Some of the Latest Events</h2>
+  <div class="event-cards" style="display: flex; flex-wrap: wrap; gap: 1rem;">
+    {{#each events}}
+      <div class="event-card" style="background: #fff; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; width: calc(33.333% - 1rem); box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <img src="{{this.image}}" alt="{{this.title}}" style="width: 100%; height: auto;">
+        <div style="padding: 1rem;">
+          <h3>{{this.title}}</h3>
+          <p>{{this.description}}</p>
+          <small>Creator: {{this.user.name}}</small>
+          <div class="event-actions" style="margin-top: 1rem;">
+            <button class="like-btn" style="background-color: #007bff; color: #fff; border: none; padding: .5rem 1rem; border-radius: 3px; cursor: pointer;">Like</button>
+            <button class="remind-btn" style="background-color: #28a745; color: #fff; border: none; padding: .5rem 1rem; border-radius: 3px; cursor: pointer;">Remind Me</button>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</section>

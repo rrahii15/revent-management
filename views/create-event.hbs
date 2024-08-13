@@ -1,0 +1,10 @@
+<div class="create-event-container" style="max-width: 600px; margin: auto; padding: 1rem; background: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+  <h2>Create New Event</h2>
+  <form action="/events/create" method="POST">
+    <label for="title" style="display: block; margin-bottom: .5rem;">Event Title:</label>
+    <input type="text" id="title" name="title" required style="width: 100%; padding: .5rem; border: 1px solid #ddd; border-radius: 3px;" />
+    <label for="date" style="display: block; margin-top: 1rem; margin-bottom: .5rem;">Event Date:</label>
+    <input type="date" id="date" name="date" required style="width: 100%; padding: .5rem; border: 1px solid #ddd; border-radius: 3px;" />
+    <button type="submit" style="margin-top: 1rem; background-color: #007bff; color: #fff; border: none; padding: .75rem 1.5rem; border-radius: 3px; cursor: pointer;">Create Event</button>
+  </form>
+</div>

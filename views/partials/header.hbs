@@ -1,0 +1,15 @@
+<header style="background-color: #007bff; color: #fff; padding: 1rem;">
+  <nav style="display: flex; justify-content: space-between; align-items: center;">
+    <a href="/" class="logo" style="font-size: 1.5rem; color: #fff; text-decoration: none;">Event-M</a>
+    <ul style="list-style: none; padding: 0; margin: 0; display: flex;">
+      {{#if user}}
+        <li style="margin: 0 .5rem;"><a href="/dashboard" style="color: #fff; text-decoration: none;">Dashboard</a></li>
+        <li style="margin: 0 .5rem;"><a href="/events" style="color: #fff; text-decoration: none;">My Events</a></li>
+        <li style="margin: 0 .5rem;"><a href="/users/logout" style="color: #fff; text-decoration: none;">Logout</a></li>
+      {{else}}
+        <li style="margin: 0 .5rem;"><a href="/users/login" style="color: #fff; text-decoration: none;">Login</a></li>
+        <li style="margin: 0 .5rem;"><a href="/users/register" style="color: #fff; text-decoration: none;">Register</a></li>
+      {{/if}}
+    </ul>
+  </nav>
+</header>
